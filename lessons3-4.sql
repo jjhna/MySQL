@@ -14,4 +14,3 @@ mysql> insert into employees(first_name, last_name, age) values ('Dora', 'explor
 Query OK, 1 row affected (0.01 sec)
 
 mysql> drop table employees;
-//This is to delete the table called employees
