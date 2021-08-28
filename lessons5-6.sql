@@ -1,5 +1,7 @@
 -- The READ FROM CRUD:
 
+-- IMPORTANT NOTE: the command LIKE allows the user to search up partial matches such as author = '%the%' while the = sign only searches for exact matches
+
 mysql> select cat_id, name, age, breed from cats;
 +--------+----------------+------+------------+
 | cat_id | name           | age  | breed      |
