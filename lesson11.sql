@@ -273,3 +273,14 @@ mysql> select title, author_lname, case when title like '%stories%' then 'Short 
 +-----------------------------------------------------+----------------+---------------+
 19 rows in set (0.00 sec)
 
+mysql> select first_name, ifnull(sum(grade), 0) as 'average', case when sum(grade) >= 70 then 'PASSING' else 'FAILING' end as 'passing_status' from students left join papers on students.id = papers.student_id group by first_name order by average desc;
++------------+---------+----------------+
+| first_name | average | passing_status |
++------------+---------+----------------+
+| Samantha   |      18 | FAILING        |
+| Caleb      |      13 | FAILING        |
+| Carlos     |       8 | FAILING        |
+| Raj        |       0 | FAILING        |
+| Lisa       |       0 | FAILING        |
++------------+---------+----------------+
+5 rows in set (0.00 sec)
