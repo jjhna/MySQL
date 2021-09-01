@@ -1,0 +1,14 @@
+Lesson 16: Adding Node JS to application
+
+To start the process of node first: use the command mysql-ctl cli to start the command line for mysql
+This will start the initalization of the database
+For example if you want to access and edit the database named "books" or "join_us" then you must enter that info into the connections: host, user and database (especially the database).
+You should be abble to get the host and user from the credentials when accessing the mysql-ctl cli command line
+
+Then make sure that the database you want to use exist, if not then create it by using the create table command
+When you're all done with that exit the cli and go back to the original terminal
+
+Afterwards enter into the node module folder list: cd node_modules
+
+Then start the application, such as: node app.js
+
